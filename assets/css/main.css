@@ -1,0 +1,134 @@
+main {
+  width: 100%;
+  padding-block: 2rem;
+}
+
+.ofertas-especiais {
+  max-width: 1200px;
+  margin: 5rem auto 0 auto;
+  padding: 0 1.3rem;
+}
+
+.ofertas-especiais h2 {
+  font-size: 32px;
+  padding-bottom: 5px;
+}
+
+.ofertas-especiais p {
+  margin-bottom: 10px;
+}
+
+.ofertas {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  min-height: 25rem;
+}
+
+.primeira-oferta {
+  grid-area: 1 / 1 / span 2 / span 1;
+}
+
+.segunda-oferta {
+  grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.terceira-oferta {
+  grid-area: 2 / 2 / span 1 / span 1;
+}
+
+.horario-de-funcionamento {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.horarios {
+  background-color: #f43127;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  border-radius: 7px;
+}
+
+.timer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(29, 6, 5, 0.2);
+}
+
+.timer-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-left: 1px solid rgba(29, 6, 5, 0.4);
+  padding-inline: 1rem;
+}
+
+.timer-info h3 {
+  color: #1d0605;
+  margin-bottom: 0.5rem;
+}
+
+.timer-info p {
+  color: #fae2cb;
+  margin: 0;
+}
+
+.instaHastg {
+  text-align: center;
+}
+
+.instaHastg h1 {
+  color: #f43127;
+  margin-bottom: 25px;
+}
+
+.instaHastg p {
+  color: rgba(29, 6, 5, 0.69);
+  margin-top: 50px;
+}
+
+@media (max-width: 540px) {
+
+  .hero-banner h1 {
+    font-size: 3.5rem;
+  }
+
+  .ofertas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .ofertas > div {
+    width: 100%;
+  }
+
+  .ofertas img {
+    width: 100%;
+    height: auto;
+  }
+
+  .offer-info h2 {
+    font-size: 1.25rem;
+  }
+
+  .hour-info {
+    width: 100%;
+  }
+
+  .instagramHashCta {
+    margin: 0 auto;
+  }
+
+
+}
+
+
