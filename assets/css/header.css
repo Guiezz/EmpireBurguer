@@ -56,6 +56,12 @@ nav {
   background-color: #f59a1b;
   padding: 0.2rem;
   border-radius: 4px;
+  cursor: pointer;
+}
+.contact-us:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .socials {
@@ -214,6 +220,9 @@ nav {
 
 .cta-btn:hover {
   background-color: #cf0a00;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .info {
