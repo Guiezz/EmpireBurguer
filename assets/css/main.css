@@ -5,36 +5,104 @@ main {
 
 .ofertas-especiais {
   max-width: 1200px;
-  margin: 5rem auto 0 auto;
+  margin: 1rem auto 0 auto;
   padding: 0 1.3rem;
 }
 
 .ofertas-especiais h2 {
-  font-size: 32px;
-  padding-bottom: 5px;
+  font-size: 2rem;
+  color: #3b200b;
 }
 
-.ofertas-especiais p {
-  margin-bottom: 10px;
+.ofertas-especiais p .ofertas-especiais h2 {
+  margin-bottom: 0.4rem;
+}
+
+.info-oferta {
+  width: 95%;
+}
+
+.info-oferta h2,
+.info-oferta span {
+  color: white;
+}
+
+.alerta-oferta p,
+.alerta-oferta h3{
+  color: white;
+  margin: 0;
+}
+
+.alerta-oferta {
+  align-self: flex-end;
+}
+
+.bgImperial {
+  color: white;
+  font-size: 1.563rem;
 }
 
 .ofertas {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 10px;
+  grid-template-rows: 1fr 1.05fr;
+  gap: 10px 10px;
+  grid-template-areas:
+    "first-offer second-offer"
+    "first-offer third-offer";
   min-height: 25rem;
 }
 
+.primeira-oferta,
+.segunda-oferta,
+.terceira-oferta {
+  border-radius: 8px;
+  padding: 1rem;
+}
+
 .primeira-oferta {
-  grid-area: 1 / 1 / span 2 / span 1;
+  padding: 2rem;
+}
+
+.primeira-oferta h2,
+.segunda-oferta h2,
+.terceira-oferta h2 {
+  margin: 0;
+}
+
+
+
+.primeira-oferta {
+  background-image: url("/img/ofertas/oferta-1.png");
+  background-size: cover;
+  grid-area: first-offer;
+  background-position: center;
+  display: flex;
 }
 
 .segunda-oferta {
-  grid-area: 1 / 2 / span 1 / span 1;
+  background: url("/img/ofertas/oferta-2.png") no-repeat;
+  background-size: cover;
+  grid-area: second-offer;
+  background-position: center;
+}
+
+.segunda-oferta h2,
+.terceira-oferta h2 {
+  font-size: 1.25rem;
 }
 
 .terceira-oferta {
-  grid-area: 2 / 2 / span 1 / span 1;
+  background: url("/img/ofertas/oferta-3.png") no-repeat;
+  background-size: cover;
+  grid-area: third-offer;
+  background-position: center;
+}
+
+.funcionamento {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1.3rem;
 }
 
 .horario-de-funcionamento {
@@ -45,13 +113,20 @@ main {
 }
 
 .horarios {
-  background-color: #f43127;
   margin-top: 1rem;
   display: flex;
   align-items: center;
   gap: 1rem;
   padding: 0.5rem;
   border-radius: 7px;
+}
+
+.horarios {
+  background-color: #f43127;
+}
+
+.horarios.aberto {
+  background-color: #1eb63d
 }
 
 .timer img {
@@ -94,11 +169,7 @@ main {
   margin-top: 50px;
 }
 
-@media (max-width: 540px) {
-
-  .hero-banner h1 {
-    font-size: 3.5rem;
-  }
+@media (max-width: 768px) {
 
   .ofertas {
     display: flex;
@@ -107,28 +178,37 @@ main {
     gap: 1rem;
   }
 
-  .ofertas > div {
+  .ofertas>div {
     width: 100%;
   }
 
-  .ofertas img {
-    width: 100%;
-    height: auto;
+  .info-oferta h2 {
+    font-size: 1.25rem;
+  }
+
+  .segunda-oferta,
+  .terceira-oferta {
+    height: 97px;
+  }
+  
+
+  .ofertas-especiais {
+    margin: 7rem auto 0 auto;
+    padding: 0 1.3rem;
   }
 
   .offer-info h2 {
     font-size: 1.25rem;
   }
 
-  .hour-info {
+  .timer-info {
     width: 100%;
   }
 
-  .instagramHashCta {
+  .instaHastg {
     margin: 0 auto;
   }
 
 
 }
-
 
