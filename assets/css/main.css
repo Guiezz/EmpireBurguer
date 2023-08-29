@@ -14,8 +14,8 @@ main {
   color: #3b200b;
 }
 
-.ofertas-especiais p .ofertas-especiais h2 {
-  margin-bottom: 0.4rem;
+ .offer-text{
+  margin-bottom: 10px;
 }
 
 .info-oferta {
